@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio - Mishack Madubandlela</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Portfolio HTML Template" name="keywords">
+        <meta content="Portfolio HTML Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Solway:400,700&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+  <body>
+    <style media="screen">
+    .header {
+        background: linear-gradient(to top, blue, purple);
+        height: 70px;
+    }
+
+    .header .logo {
+        margin: 14px 25px 0 0;
+    }
+
+    .header .logo h1 {
+        font-size: 36px;
+        margin: 0;
+        padding: 2px 0;
+        line-height: 1;
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+
+    .header .logo h1 a,
+    .header .logo h1 a:hover {
+        color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+        .header {
+            height: 50px;
+        }
+
+        .header .logo {
+            margin: 10px 0 0 0;
+        }
+
+        .header .logo h1 {
+            padding: 2px 0;
+            font-size: 26px;
+        }
+    }
+
+    .header .social-nav {
+        margin-top: 15px;
+    }
+
+    .header .social-nav a {
+        font-size: 24px;
+        margin-left: 15px;
+        color: #fff;
+    }
+
+    .header .social-nav a:hover {
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    .nav-menu, .nav-menu * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav-menu ul {
+        position: absolute;
+        display: none;
+        top: 100%;
+        left: 0;
+        z-index: 99;
+    }
+
+    .nav-menu li {
+        position: relative;
+        white-space: nowrap;
+    }
+
+    .nav-menu > li {
+        float: left;
+    }
+
+    .nav-menu li:hover > ul,
+    .nav-menu li.sfHover > ul {
+        display: block;
+    }
+
+    .nav-menu ul ul {
+        top: 0;
+        left: 100%;
+    }
+
+    .nav-menu ul li {
+        min-width: 180px;
+    }
+    #nav-menu-container {
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        #nav-menu-container {
+            display: none;
+        }
+    }
+
+    .nav-menu a {
+        padding: 22px 15px;
+        text-decoration: none;
+        display: inline-block;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 16px;
+        outline: none;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu li:hover > a,
+    .nav-menu .menu-active > a {
+        color: #000000;
+    }
+
+    .nav-menu ul {
+        margin: 7px 0 0 15px;
+        -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
+    }
+
+    .nav-menu ul li {
+        background: #ffffff;
+        border-top: 1px solid #f4f4f4;
+    }
+
+    .nav-menu ul li:first-child {
+        border-top: 0;
+    }
+
+    .nav-menu ul li:hover {
+        background: #AF9483;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+    .nav-menu ul li a {
+        color: #333333;
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+        padding: 10px 15px;
+    }
+
+    .nav-menu ul li a:hover {
+        color: #ffffff;
+    }
+
+    .nav-menu ul ul {
+        margin: 0;
+    }
+
+    #mobile-nav-toggle {
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 999;
+        margin: 8px 10px 0 0;
+        border: 0;
+        background: none;
+        font-size: 24px;
+        display: none;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+        outline: none;
+        cursor: pointer;
+    }
+
+    #mobile-nav-toggle i {
+        color: #fff;
+    }
+
+    @media (max-width: 425px) {
+      #mobile-nav-toggle{
+        visibility: visible;
+        color: white;
+
+      }
+    }
+
+    @media (max-width: 768px) {
+        #mobile-nav-toggle {
+            display: inline;
+        }
+
+        .logo {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    #mobile-nav {
+        position: fixed;
+        top: 0;
+        padding-top: 18px;
+        bottom: 0;
+        z-index: 998;
+        background: rgba(0, 0, 0, 0.9);
+        left: -260px;
+        width: 260px;
+        overflow-y: auto;
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+    }
+
+    #mobile-nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    #mobile-nav ul li {
+        position: relative;
+    }
+
+    #mobile-nav ul li a {
+        color: #ffffff;
+        font-size: 16px;
+        overflow: hidden;
+        padding: 10px 22px 10px 15px;
+        position: relative;
+        text-decoration: none;
+        width: 100%;
+        display: block;
+        outline: none;
+    }
+
+    #mobile-nav ul li a:hover {
+        color: #ffffff;
+    }
+
+    #mobile-nav ul li li {
+        padding-left: 30px;
+    }
+
+
+    #form-div{
+      margin-left: auto;
+      margin-right: auto;
+      background-color: transparent;
+      max-width: 50%;
+    }
+
+    @media (max-width: 425px) {
+      .form{
+        max-width: 90%;
+        margin-left: 10px;
+      }
+      .form .service .form-select option{
+        width: 50%
+      }
+      .header .logo .project{
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+    @media (min-width: 425px) and (max-width: 768px) { /* IDEA: to maximise the form for tablet screen */
+      .form{
+        width: 700px;
+      }
+    }
+
+    .form{
+        background-color:  #d6eaf8 ;
+        padding: 40px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px rgba(194, 194, 194, 0.5);
+
+    }
+
+    .form:hover {
+      background-color: rgba(174, 214, 241);
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .form label {
+        margin-bottom: 10px;
+        color: rgb(128, 128, 128);
+        font-size: 1em;
+    }
+
+    .form input {
+        margin-bottom: 15px;
+        padding: 8px;
+        border: 1px solid #5555558e;
+        border-radius: 3px;
+        background-color: var(--primary);
+        font-size: 1.1em;
+        width: 100%;
+    }
+
+    .form input:hover{
+      background-color: #FFFFFF;
+    }
+
+    .form input:focus {
+      background-color: #ffffff;
+      box-shadow: 3px 1px 7px red;
+    }
+
+    .form .service .form-select{
+      margin-bottom: 15px;
+      padding: 8px;
+      border: 1px solid #5555558e;
+      border-radius: 3px;
+      background-color: var(--primary);
+      font-size: 1.1em;
+      width: 100%;
+    }
+
+
+    .form button {
+        padding: 11px;
+        background-color: #850f0f;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 1.2em;
+    }
+
+    .form button:hover {
+        background-color:  #3498db;
+        transform: scale(1.05);
+        transition: .3s ease;
+    }
+
+    #apply-service{
+      margin-top: 0;
+    }
+
+    .radio-label{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .form .radio1{
+      width: 40%;
+    }
+
+    .form .radio2{
+      width: 40%;
+    }
+
+
+    </style>
+    <!-- Nav Start -->
+    <div class="header">
+        <div class="container">
+
+            <div class="logo text-center col-lg-12 mt-0 pt-2">
+                <h1 class="text-light text-center">Mishack | Hire Me <b class="project">For A Project</b></h1>
+            </div>
+
+            <!-- <nav id="nav-menu-container">
+              <button type="button" id="mobile-nav-toggle"><i class="fa fa-bars text-light">MENU</i></button>
+                <ul class="nav-menu">
+                    <li><a href="#top-header">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li class="menu-has-children"><a href="#">Drop Down</a>
+                        <ul>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li><a href="#">Drop Down 2</a></li>
+                            <li class="menu-has-children"><a href="#">Drop Down 3</a>
+                                <ul>
+                                    <li><a href="#">Drop Down 1</a></li>
+                                    <li><a href="#">Drop Down 2</a></li>
+                                    <li><a href="#">Drop Down 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </nav> -->
+
+            <!-- <nav class="nav social-nav pull-right d-none d-lg-inline">
+                <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a>
+            </nav> -->
+        </div>
+    </div>
+    <!-- Nav End -->
+
+
+
+    <div class="container col-lg-12 mt-5 mb-5">
+      <div class="row justify-content-center">
+        <div class="form col-md-6 text-center">
+          <form action="" method="post">
+            <label for="name">Full Name & Surname:</label> <br>
+            <input type="text" id="name" name="name" placeholder="e.g. John Doe" required> <br>
+            <label for="business">Company:</label> <br>
+            <input type="text" id="company" name="company" placeholder="ABCD (Pty) Ltd"><br>
+            <label for="email">Email Address:</label> <br>
+            <input type="text" id="email" name="email" placeholder="example@email.com" required><br>
+            <label for="whatsapp">Phone Number (Preferably WhatsApp):</label> <br>
+            <input type="text" id="whatsapp" name="whatsapp" placeholder="0712345678" required><br>
+            <label for="calls">Phone Number For Direct Calls:</label> <br>
+            <input type="text" id="calls" name="calls" placeholder="0712345678"><br>
+            <label for="service">Service Required</label><br>
+              <div class="service">
+                  <select class="form-select text-dark" name="service" id="service">
+                      <option class="choose">Display Website</option>
+                      <option class="choose">Standard Website</option>
+                      <option class="choose">Web Application</option>
+                      <option class="choose">Graphic Design</option>
+                      <option class="choose">Customer Management System</option>
+                      <option class="choose">Online Store Website</option>
+                  </select>
+              </div>
+            <label for="shop">Is your business an online shop?</label> <br>
+            <div class="service">
+                <select class="form-select text-dark" name="service" id="service" required>
+                    <option class="choose" name="YES" >Select One</option>
+                    <option class="choose" name="NO">Yes</option>
+                    <option class="choose" name="NO">No</option>
+                </select>
+            </div>
+            <p class="form-terms text-dark">
+              <i>Filling and submiting this form to the developer means you agree to communicate with him on a regular basis and to give him full instructions on your project. Please note that we will commence with your project as soon as we receive a <strong>50%</strong> deposit once all the details about your project have been shared to the developer. Remaining amount is expected as soon as said project is complete</i>
+            </p>
+            <button type="submit">SUMBIT</button> <br> <br><br>
+            <p style="color: var(--dark)"><i>..go back </i><a href="index.html" style="color: var(--primary); text-decoration: underline">home</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
