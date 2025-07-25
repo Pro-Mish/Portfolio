@@ -11,7 +11,8 @@ app.secret_key = os.getenv('SECRET_KEY')
 
 # Secure mail config
 app.config['MAIL_SERVER'] = os.getenv('MAIL_SERVER')
-app.config['MAIL_PORT'] = int(os.getenv('MAIL_PORT'))
+mail_port = os.getenv('MAIL_PORT')
+app.config['MAIL_PORT'] = int(mail_port) if mail_port is not None else 465  # Default to 465 or your preferred port
 app.config['MAIL_USE_SSL'] = os.getenv('MAIL_USE_SSL') == 'True'
 app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
 app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
