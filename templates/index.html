@@ -45,9 +45,9 @@
         <div class="top-header" id="top-header">
             <div class="container text-left">
                 <div class="row">
-                    <!-- <div class="col-md-12">
-                        <img src="img/profile-removebg-preview (1).png" alt="Mishack Madubandlela-profile-pic" />
-                    </div> -->
+                    <div class="col-md-12">
+                        <img src="{{ url_for('static', filename='img/profile-removebg-preview (1).png') }}" class="mt-0" alt="Mishack Madubandlela-profile-pic"  />
+                    </div>
 
                     <div class="col-md-12">
                         <h1 class="my-name border-left">Mishack Madubandlela</h1>
@@ -96,7 +96,7 @@
                                 </li>
                             </ul>
                         </li>-->
-                        <li><a href="#about">My Skills</a></li>
+                        <li><a href="#skills">My Skills</a></li>
                         <li><a href="#experience">My Experience</a></li>
                         <li><a href="#portfolio">Past Projects</a></li>
                         <li><a href="#contact">Contact me</a></li>
@@ -120,31 +120,33 @@
 
                     <div class="col-md-6 col-lg-8">
                         <header class="section-header">
-                            <h2 style="color: #000222">About Me</h2>
+                            <h2 class="px-3" style="color: #e2e2e2">About Me</h2>
                         </header>
-                        <h3><strong>Name:</strong>
+                        <h3><strong class="text-light">Name:</strong> <br>
                           <a href="https://www.google.com/search?q=Mishack+Madubandlela&oq=Mishack+Madubandlela&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg8MgYIAhBFGDwyBggDEEUYPNIBCDY1MDRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" style="background-color: transparent; padding: 0; border:none; font-size: 20px">
                             <u>Mishack Madubandlela</u>
                           </a>
                         </h3>
-                        <h4><strong>Profession:</strong> <span style="font-size:20px; color:white">Web Developer & Designer, Business Professional</span></h4>
-                        <p>
+                        <h3 class="mt-3"><strong class="text-light">Profession:</strong> <br>
+                            <span style="font-size:20px; color:white">Web Developer & Designer, Business Professional</span>
+                        </h3>
+                        <p style="text-align: justify;">
                             The passion for computers and technology has been long existing in me as well as the wonder of how things work, digitally.
                         </p>
-                        <p>
+                        <p style="text-align: justify;">
                             The fascination that comes with a properly designed user interface corresponding with the experience you get when using a digital platform is the experience I wanted to learn how to create and leave a legacy of the best UX/UI products and services on device softwares for the users.
                         </p>
-                        <p>
-                            All that was until I started learning HTML and CSS for web design. Then with better design skills, I wanted to learn more of what I can actually produce for users anywhere. The more in demand services. That was when I was introduced to programming. It provided me with the best learning curves as it was not easy. But the joy anyone gets when using a properly designed and functional program or software kept me pushing towards more frameworks and lnguages to better my work in tech. I still have a long way to go and I'm going to climb that ladder and never go back down.
+                        <p style="text-align: justify;">
+                            All that was until I started learning HTML and CSS for web design. Then with better design skills, I wanted to learn more of what I can actually produce for users anywhere. The more in demand services. That was when I was introduced to programming. It provided me with the best learning curves as it was not easy. But the joy anyone gets when using a properly designed and functional program or software kept me pushing towards more frameworks and languages to better my work in tech. I still have a long way to go and I'm going to climb that ladder and never go back down.
                         </p>
-                        <p>I've grown my skills to be a more versertaile and skillful person on my own to be able to stand my own ground and be able to provide many services. Especially in the corporate industry. Which is where I honed my skills in business. Mainly adminsitration, research and planning. But my main and first big skill is marketing strategy. This is because I understood early that a business cannot run without visibilty. <i>"Ignoring marketing is starting a business and not telling anyone"</i>
+                        <p style="text-align: justify;">I've grown my skills to be a more versetile and skillful person on my own to be able to stand my own ground and be able to provide many services. Especially in the corporate industry. Which is where I honed my skills in business. Mainly administration, research and planning. But my main and first big skill is marketing strategy. This is because I understood early that a business cannot run without visibility. <i>"Ignoring marketing is starting a business and not telling anyone"</i>
                         </p>
                         <a href="{{ url_for('hire') }}" style="border-radius:8px">Hire Me</a>
                     </div>
                 </div>
               </div>
 
-              <div class="container col-lg-12">
+            <div class="container col-lg-12 mt-5" id="skills">
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="skills">
@@ -162,12 +164,11 @@
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-
                             <div class="skill-name">
-                                <p>Bootstrap</p><p>85%</p>
+                                <p>Bootstrap</p><p>80%</p>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
 
                             <div class="skill-name">
@@ -182,24 +183,17 @@
                         <div class="skills">
                             <h3>Back End Skills</h3>
                             <div class="skill-name">
-                                <p>Python3</p><p>60%</p>
+                                <p>Python3</p><p>55%</p>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
 
                             <div class="skill-name">
-                                <p>FLASK</p><p>50%</p>
+                                <p>Laravel</p><p>35%</p>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
-                            <div class="skill-name">
-                                <p>Laravel PHP</p><p>50%</p>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
 
                             <div class="skill-name">
@@ -240,15 +234,15 @@
                       </div>
                     </div>
                 </div>
-        </div>
+            </div>
         <!-- About Me End-->
 
         <!-- Job Experience Start -->
         <div class="experience" id="experience">
             <div class="container">
-                <header class="section-header">
-                    <h2>Job Experience</h2>
-                    <p>
+                <header class="section-header mt-5">
+                    <h2 class="text-light px-3">Job Experience</h2>
+                    <p style="text-align: justify;">
                       My previous work experience is recorded below and showcases the skills that I have used to get to where I am. This is how my tech skills have advanced over the years since I learnt coding and programming.
                     </p>
                 </header>
@@ -258,7 +252,7 @@
                         <p class="exp-date">Oct-2020 <span>to</span> November-2022</p>
                         <h4 class="exp-company">Eclipse Web Design, Mpumalanga, ZA</h4>
                         <h4 class="exp-designation">Trainee Web Designer</h4>
-                        <p class="exp-detail">
+                        <p class="exp-detail" style="text-align: justify;">
                           Working on the front-end web development of clients' projects as a user interface designer. It was an exciting experience to learn a new skill and yet have to practice by solving real world problems for others to help grow their online presence beautifully.
                         </p>
                       </div>
@@ -268,8 +262,8 @@
                           <p class="exp-date">March-2022 <span>to</span> April-2024</p>
                           <h4 class="exp-company">Freelancer, Mpumalanga, ZA</h4>
                           <h4 class="exp-designation">Graphic Designer</h4>
-                          <p class="exp-detail">
-                              Designing beautifully compelling marketing designs for business to reach a wider audience is what I like when working in the tech space. Digital visibility is the key to grow in this era of technological advancements.
+                          <p class="exp-detail" style="text-align: justify;">
+                              Designing beautifully compelling marketing designs for business to reach a wider audience is what I like when working in the tech space. Digital visibility is the key to grow in this era of technological advancements. Home is where the heart is BUT design is where true art is. 
                           </p>
                       </div>
 
@@ -279,18 +273,18 @@
                           <p class="exp-date">May-2024 <span>to</span> Current</p>
                           <h4 class="exp-company">Freelancer, Mpumalanga, ZA</h4>
                           <h4 class="exp-designation">Web Designer & Developer</h4>
-                          <p class="exp-detail">
-                              Working on my own, I develop websites and host them with my hosting partner. I'm strictly focused on ensuring the success of each client's business online to reach their advertising goals to improve conversion rates. I achieve this plan by ensuring that I utilize all the relevant digital tools such as CTAs in my desgins to draw the attention of viewers.
+                          <p class="exp-detail" style="text-align: justify;">
+                              Working on my own, I develop websites and host them with my hosting partner. I'm strictly focused on ensuring the success of each client's business online to reach their advertising goals to improve conversion rates. I achieve this plan by ensuring that I utilize all the relevant digital tools such as CTAs in my designs to draw the attention of viewers. All this is achieved by utilizing other relevant techniques such as the marketing AIDA formula.
                           </p>
                       </div>
                     </div>
                     <div class="col-md-6">
                         <div class="exp-column">
                             <p class="exp-date">Feb-2023 <span>to</span> 20-Dec-2024</p>
-                            <h4 class="exp-company">LUBANDI GROUP (Pty) Ltd., Mpumalanga, ZA</h4>
+                            <h4 class="exp-company">LUBAND GROUP (Pty) Ltd., Mpumalanga, ZA</h4>
                             <h4 class="exp-designation">Manager</h4>
-                            <p class="exp-detail">
-                                As a small company manager, I did a lot of the roles. My biggest role was marketing. But then I had to merge into busines administration to ensure that the business runs well. I would do the HRM, Office administration and financial admin as well. With my skills, my boss was superbly impressed and would always come to me for any extra help with business projects and development strategies.
+                            <p class="exp-detail" style="text-align: justify;">
+                                As a small company manager, I did a lot of the roles. My biggest role was marketing. But then I had to merge into business administration to ensure that the business runs well. I would do the HRM, Office administration and financial admin as well. With my skills, my boss was superbly impressed and would always come to me for any extra help with business projects and development strategies.
                             </p>
                         </div>
                     </div>
@@ -300,11 +294,11 @@
         <!-- Job Experience End -->
 
         <!-- Services Start -->
-        <div class="services bg-primary" id="services">
+        <div class="services" id="services">
             <div class="container">
-                <header class="section-header">
-                    <h2 class="my-services">My Services</h2>
-                    <p>
+                <header class="section-header mt-4">
+                    <h2 class="my-services text-light px-3">My Services</h2>
+                    <p class="fs-5 w-100">
                         Below are the list of services I can and am willing to offer to anyone seeking success in any of my skilled talents.
                     </p>
                 </header>
@@ -322,7 +316,7 @@
                             <span></span>
                             <div class="service-icon"> <i class="fa fa-laptop"></i> </div>
                             <h4><a href="web-hire.html" data-title="web service hire" class="link-preview" title="View Hire Form" target="_blank">Web Development & Design</a></h4>
-                            <p>Now, you can have your very own website for your business display, personal blog or online shop. My designs include user-friendly UI/UX displays and easy navigation around the whole interface. NO complicated designs that may confuse users. The best designs for any busines to be visible online</p>
+                            <p>Now, you can have your very own website for your business display, personal blog or online shop. My designs include user-friendly UI/UX displays and easy navigation around the whole interface. NO complicated designs that may confuse users. The best designs for any business to be visible online</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4">
@@ -330,7 +324,7 @@
                             <span></span>
                             <div class="service-icon"> <i class="fa fa-android"></i> </div>
                             <h4><a href="web-hire-app.html" data-title="web service hire" class="link-preview" title="View Hire Form" target="_blank">Applications Development</a></h4>
-                            <p>Now, with my affiliate partner and relevant tools neccessary for applications development, I can integrate my desgin skills with external ones to create the best user-friendly applications. From simple web-apps to complex functionality web-apps that entail automated functions, made to simplify your life</p>
+                            <p>Now, with my affiliate partner and relevant tools necessary for applications development, I can integrate my design skills with external ones to create the best user-friendly applications. From simple web-apps to complex functionality web-apps that entail automated functions, made to simplify your life</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4">
@@ -339,7 +333,7 @@
                             <div class="service-icon"> <i class="fa fa-envelope-o"></i> </div>
                             <h4><a href="web-hire-graphic.html" data-title="web service hire" class="link-preview" title="View Hire Form" target="_blank">Graphic Design</a></h4>
                             <p>
-                              <i>&quoteIgnoring marketing is like starting a business but not telling anybody&quot.</i>
+                              <i>&quotIgnoring marketing is like starting a business but not telling anybody&quot.</i>
                               If you are starting something that needs views and conversions on sales, our simplistic to complex advertising designs will guarantee the visibility your business needs to reach more customers/clients
                             </p>
                         </div>
@@ -366,9 +360,9 @@
         <!-- Services End -->
 
         <!-- Counter Start -->
-        <div class="counters pt-1">
+        <div class="counters pt-1 mt-5">
             <div class="container">
-                <div class="row">
+                <div class="row mt-5">
                     <div class="col-sm-2">
                         <div class="counter">
                             <div class="counter-icon-box"><i class="fa fa-calendar"></i></div>
@@ -419,9 +413,9 @@
         <!-- Portfolio Start -->
         <div class="portfolio" id="portfolio">
             <div class="container">
-                <header class="section-header col-lg-12">
-                    <h2 class="section-title">My Portfolio</h2>
-                    <p class="text-center">
+                <header class="section-header col-lg-12 text-center">
+                    <h2 class="section-title text-light px-3">My Portfolio Work</h2>
+                    <p class="text-center mx-auto">
                         You can see my past projects that I have worked on for clients from varius fields of business and what I have done to improve online visibility for the growth of the business' accessibility remotely
                     </p>
                 </header>
@@ -570,7 +564,7 @@
         <div class="contact" id="contact">
             <div class="container pt-3">
                 <div class="section-header">
-                    <h2>Contact Me</h2>
+                    <h2 class="text-light">Contact Me</h2>
                     <p>
                         Below are my personal contact details to get in touch with me and disccover what more I can do for your online presence development.
                     </p>
@@ -612,7 +606,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="subjectclass="form-control" placeholder="Subject"/>
+                                    <input type="text" name="subject" class="form-control" placeholder="Subject"/>
                                 </div>
                                 <div class="form-group">
                                     <textarea class="form-control" name="message" rows="5" placeholder="What Would You Like To Know?"></textarea>
@@ -681,7 +675,7 @@
                     <p>&copy; Copyright <a href="#">Mish Madubandlela</a> All Rights Reserved</p>
                   </div>
                   <div class="col-lg-6 text-right">
-                    <p>Powered & Designed by <a href="https://natwebdigitalsolutions.com" target="_blank">NatWeb Digital Solutions Co.</a></p>
+                    <p>Powered & Designed by <a href="https://natek-softwares.onrender.com" target="_blank">NAT<span style=" display: in-line block; transform:rotate(-180deg);">E</span>K Softwares</a></p>
                   </div>
                 </div>
             </div>
